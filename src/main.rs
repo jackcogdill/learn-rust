@@ -9,7 +9,7 @@ struct Person<'a> {
 
 impl<'a> fmt::Display for Person<'a> {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{0}: {1}", self.name, self.age)
+        write!(f, "{}: {}", self.name, self.age)
     }
 }
 
